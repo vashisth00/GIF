@@ -5,10 +5,11 @@ import axios from 'axios';
 
 const API_KEY = process.env.REACT_APP_API_KEY
 
-const GetGif = () => {
+const SearchGif = () => {
     const [gif, setGif] = useState('');
-    const fetchGif = async () =>{
-        const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=&rating=g`;
+    const [name, setName] = useState('dogs');
+    const fetchGif = async (name) =>{
+        const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${name}`;
         //promise
         const {data } = await axios.get(url);
         console.log(data);
@@ -18,25 +19,23 @@ const GetGif = () => {
     } 
 
     useEffect(()=>{
-        //async arrow function
-  
-
-        fetchGif();
-    },[]);
+        fetchGif(name);
+    },[name]);
 
     const handleClick = () => {
-        fetchGif();
+        fetchGif(name);
  }
     return(
         <>
-        <div className="container-fluid">
-        <h3>Random</h3>
+        <div className="container">
+    <h3>Generated {name}</h3>
            <img width={350} src={gif}></img>
-           <button onClick={handleClick} type="button" className="btn btn-outline-dark">Generate</button>
+           <input value={name} onChange={(e) => setName(e.target.value)}></input>
+           <button onClick={handleClick} type="button" className="btn btn-outline-dark">New</button>
         </div>
         </>
     )
 
 }
 
-export default GetGif;
+export default SearchGif;
