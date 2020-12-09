@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
+// Add this
+  //REACT_APP_API_KEY='voXmQr95Eno3guZAD8pJYhdiNXz4hWd0'
   <React.StrictMode>
     <App />
   </React.StrictMode>,

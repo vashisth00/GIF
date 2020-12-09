@@ -1,6 +1,14 @@
 # GIF
 Using React custom Hooks and GIPHY API to search GIFs
 
+Make an .env file in root 
+
+REACT_APP_API_KEY='xxxx'
+
+Replace xxxx with https://developers.giphy.com/explorer API
+
+- Use mine for time being voXmQr95Eno3guZAD8pJYhdiNXz4hWd0
+
 
 # Getting Started with Create React App
 
