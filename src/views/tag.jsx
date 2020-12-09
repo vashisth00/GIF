@@ -5,9 +5,8 @@ import axios from 'axios';
 
 const API_KEY = process.env.REACT_APP_API_KEY
 
-
-
 const GetGif = () => {
+    const [gig, setGif] = useState('');
 
     useEffect(()=>{
         //async arrow function
@@ -16,6 +15,9 @@ const GetGif = () => {
             //promise
             const {data } = await axios.get(url);
             console.log(data);
+
+            const imageSrc = data.data.images.downsized_large.url;
+            setGif(imageSrc);
         } 
 
         fetchGif();
@@ -24,7 +26,7 @@ const GetGif = () => {
     return(
         <>
         <div>
-            hi
+           <img src={setGif}></img>
         </div>
         </>
     )
