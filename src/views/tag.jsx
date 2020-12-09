@@ -27,6 +27,7 @@ const GetGif = () => {
         <>
         <div>
            <img src={gif}></img>
+           <button type="button" className="btn btn-outline-dark">Generate</button>
         </div>
         </>
     )

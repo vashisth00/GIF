@@ -1,16 +1,13 @@
 
 import '../styles/App.css';
 import GetGif from './tag.jsx';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <>
     <div>
-    <div className="jumbotron py-5">
-      hi
-
-    </div>
-    
+    <Navbar></Navbar>
     <GetGif/>
     
     </div>
