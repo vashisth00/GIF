@@ -12,6 +12,10 @@ Replace xxxx with https://developers.giphy.com/explorer API
 - Deployed at https://vashisthbhushan.com/gif
 
 
+[![Build Status](https://github.com/vashisth00/gif/blob/main/Screenshot%202020-12-11%20at%203.49.42%20AM.png?raw=true)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
