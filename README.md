@@ -12,7 +12,7 @@ Replace xxxx with https://developers.giphy.com/explorer API
 - Deployed at https://vashisthbhushan.com/gif
 
 
-[![Build Status](https://github.com/vashisth00/gif/blob/main/Screenshot%202020-12-11%20at%203.49.42%20AM.png?raw=true)
+[![Build Status](https://github.com/vashisth00/gif/blob/main/Screenshot%202020-12-11%20at%203.49.42%20AM.png?raw=true)]
 
 
 
@@ -24,6 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn install`
 ### `yarn start`
 
 Runs the app in the development mode.\
